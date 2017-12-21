@@ -265,7 +265,8 @@ function wrong() {
 }
 
 //when there are no questions left in qList,
-//resets the game
+//shows # of correct answers and incorrect answers
+//resets the game if player chooses to play again
 function gameOver() {
 	gamePhase = 3;
 		if (gamePhase == 3 && numCorrectAnswers+numIncorrectAnswers == 5) {
