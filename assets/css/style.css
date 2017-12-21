@@ -1,0 +1,16 @@
+.background {
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1000px;
+	height: 800px;
+}
+
+.gameScreen {
+	background-color: black;
+	color: yellow;
+}
+
+p {
+	color: yellow;
+}
