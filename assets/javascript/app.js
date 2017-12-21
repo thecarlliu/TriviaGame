@@ -277,11 +277,14 @@ function gameOver() {
 		$(".Question").text("Game Over! Let's see how you did!");
 		$(".Answer1").text("Correct Answers: "+numCorrectAnswers);
 		$(".Answer2").text("Incorrect Answers: "+numIncorrectAnswers);
-		$(".Answer3").text("Play Again!");
+		$(".Answer3").text("Click Here to Play Again!");
 
-		qList = [q.q1, q.q2, q.q3, q.q4, q.q5];
+		
 		$(".Answer3").on("click", function() {
 			if (gamePhase == 3) {
+				qList = [q.q1, q.q2, q.q3, q.q4, q.q5];
+				numCorrectAnswers = 0;
+				numIncorrectAnswers = 0;
 				runGame();
 			}
 		});
